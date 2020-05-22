@@ -1,0 +1,65 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   background-image: url("https://images.wallpaperscraft.ru/image/okean_pliazh_vid_sverhu_134429_1350x2400.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+}
+
+.container {
+   cursor: pointer;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 10px 0;
+   flex-direction: column;
+   transform-style: preserve-3d;
+}
+
+.container .box {
+   position: relative;
+   width: 450px;
+   height: 200px;
+   margin: 150px 0;
+
+   transform-style: preserve-3d;
+}
+.container .box .imgBx {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   transform: translate(10px) scale(0);
+}
+.container .box:hover .imgBx {
+   transform: translate(10px) scale(1.3);
+}
+
+.container .box .contentBx {
+   position: absolute;
+   top: 150%;
+   left: 10%;
+   right: 50px;
+   background: wheat;
+   transform: translateZ(20px) scale(0);
+   transform-origin: top;
+   transition: 0.5s;
+   transform-style: preserve-3d;
+}
+.container .box:hover .contentBx {
+   transform: translateZ(20px) scale(1);
+}
+.container .box:hover {
+   cursor: pointer;
+   box-shadow: 0 50px 50px rgb(209, 97, 97);
+}

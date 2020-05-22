@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <link rel="stylesheet" href="Untitled-1.css" />
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+   </head>
+   <body>
+      <div class="container">
+         <div class="box">
+            <div class="imgBx">
+               <img
+                  width="450px"
+                  height="450px"
+                  src="https://scontent.fiev13-1.fna.fbcdn.net/v/t1.15752-9/p1080x2048/96681854_249540279713889_3378508299660951552_n.jpg?_nc_cat=103&_nc_sid=b96e70&_nc_ohc=Rg9o9KUgDX4AX-40AUT&_nc_ht=scontent.fiev13-1.fna&_nc_tp=6&oh=9e7bdbfabb9902c7768c56ef8a4eb171&oe=5EED791F"
+                  alt=""
+               />
+            </div>
+            <div class="contentBx">
+               <h1>Alexandra</h1>
+               <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Provident amet magni excepturi quod ducimus sit distinctio eum
+                  ipsa pariatur mollitia quasi, quas ex magnam quos laborum
+                  alias architecto aspernatur praesentium?
+               </p>
+            </div>
+         </div>
+         <div class="box">
+            <div class="imgBx">
+               <img
+                  width="450px"
+                  height="450px"
+                  src="https://scontent.fiev13-1.fna.fbcdn.net/v/t1.15752-9/p1080x2048/98181330_308754963465369_8287074260157988864_n.jpg?_nc_cat=111&_nc_sid=b96e70&_nc_ohc=nBcWmUJn624AX-d6lxa&_nc_ht=scontent.fiev13-1.fna&_nc_tp=6&oh=b9f26f88d3268fcbeb4d876411624ba1&oe=5EEDE23C"
+                  alt=""
+               />
+            </div>
+            <div class="contentBx">
+               <h1>Maria</h1>
+               <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Provident amet magni excepturi quod ducimus sit distinctio eum
+                  ipsa pariatur mollitia quasi, quas ex magnam quos laborum
+                  alias architecto aspernatur praesentium?
+               </p>
+            </div>
+         </div>
+         <div class="box">
+            <div class="imgBx">
+               <img
+                  width="450px"
+                  height="450px"
+                  src="https://scontent.fiev13-1.fna.fbcdn.net/v/t1.15752-9/p1080x2048/97068981_595418901097739_5481733430662135808_n.jpg?_nc_cat=100&_nc_sid=b96e70&_nc_ohc=askiN3tz1lMAX8bxve_&_nc_ht=scontent.fiev13-1.fna&_nc_tp=6&oh=44439608ccda738956a0232efe37b060&oe=5EEE1643"
+                  alt=""
+               />
+            </div>
+            <div class="contentBx">
+               <h1>Natalia</h1>
+               <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Provident amet magni excepturi quod ducimus sit distinctio eum
+                  ipsa pariatur mollitia quasi, quas ex magnam quos laborum
+                  alias architecto aspernatur praesentium?
+               </p>
+            </div>
+         </div>
+         <div class="box">
+            <div class="imgBx">
+               <img
+                  width="450px"
+                  height="450px"
+                  src="https://scontent.fiev13-1.fna.fbcdn.net/v/t1.15752-9/90310213_221249772405295_9046652918811328512_n.jpg?_nc_cat=103&_nc_sid=b96e70&_nc_ohc=abjeEyilbn8AX86gCZo&_nc_ht=scontent.fiev13-1.fna&oh=df44aa8ccc181bf35adf5374349ba0ac&oe=5EEE7C5D"
+                  alt=""
+               />
+            </div>
+            <div class="contentBx">
+               <h1>Natalia Alex</h1>
+               <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Provident amet magni excepturi quod ducimus sit distinctio eum
+                  ipsa pariatur mollitia quasi, quas ex magnam quos laborum
+                  alias architecto aspernatur praesentium?
+               </p>
+            </div>
+         </div>
+      </div>
+   </body>
+   <script type="text/javascript" src="vanilla-tilt.js"></script>
+   <script type="text/javascript">
+      VanillaTilt.init(document.querySelector(".box"), {
+         max: 25,
+         speed: 500,
+         easing: "cubic-bezier(.03,.98,.52,.99)",
+         gyroscope: true, // Boolean to enable/disable device orientation detection,
+         gyroscopeMinAngleX: -45,
+         gyroscopeMaxAngleX: 45,
+         gyroscopeMaxAngleY: 45,
+      });
+
+      //It also supports NodeList
+      VanillaTilt.init(document.querySelectorAll(".box"));
+   </script>
+</html>
